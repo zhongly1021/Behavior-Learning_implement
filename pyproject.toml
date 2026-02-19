@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybl"  
+version = "0.1.0"
+description = "Behavior Learning (BL): Discovering Hierarchical Optimization Structures from Data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Yue Liang", email = "yue.liang@student.uni-tuebingen.de" }]
+dependencies = [
+  "torch",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/YueLiang-hye/pybl"
+Issues = "https://github.com/YueLiang-hye/pybl/issues"
+
+[tool.setuptools]
+include-package-data = true
