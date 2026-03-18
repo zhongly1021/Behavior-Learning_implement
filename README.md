@@ -39,7 +39,6 @@ Requirements
 # python==3.10.9
 torch>=2.2
 numpy>=1.26
-pandas>=2.0
 ```
 
 After activating the virtual environment, you can install specific package requirements as follows:
@@ -74,6 +73,21 @@ Start with the notebooks in [`examples/`](./examples/):
 - [Example 2: Breast Cancer (classification)](./examples/Example_2_breast_cancer.ipynb)
 
 **You need to install scikit-learn>=1.3 to run Examples**
+
+## Minimal runnable version
+
+If you only want the smallest runnable setup, install only core dependencies:
+
+```bash
+pip install torch numpy
+pip install -e .
+```
+
+Then run the minimal script (no scikit-learn required):
+
+```bash
+python scripts/minimal_run.py
+```
 
 ## Important Hyperparameters
 
